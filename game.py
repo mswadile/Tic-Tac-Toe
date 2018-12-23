@@ -52,6 +52,7 @@ def cwin():
     if(i==2 and j==0 or i==1 and j==1 or i==0 and j==2):
         if(a[2][0]==a[1][1] and a[1][1]==a[0][2]):
             win()
+    #Draw()
     if(k==9 and w==0):
         draw()
 def playerbt1():
