@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 a=[[3,3,3],
     [3,3,3],
     [3,3,3]]
@@ -65,14 +66,18 @@ def playerbt1():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt1.configure(text=cha)
     else:
-        cha='O'
-        a[i][j]=1
-        bt1.configure(text=cha)
+    	cha='O'
+    	a[i][j]=1
+    	bt1.configure(text=cha)
     k=k+1
     cwin()
 def playerbt2():
@@ -85,7 +90,11 @@ def playerbt2():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt2.configure(text=cha)
@@ -105,7 +114,11 @@ def playerbt3():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt3.configure(text=cha)
@@ -125,7 +138,11 @@ def playerbt4():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt4.configure(text=cha)
@@ -145,7 +162,11 @@ def playerbt5():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt5.configure(text=cha)
@@ -165,7 +186,11 @@ def playerbt6():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt6.configure(text=cha)
@@ -185,7 +210,11 @@ def playerbt7():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt7.configure(text=cha)
@@ -225,13 +254,18 @@ def playerbt9():
         p=1
     else:
         p=0
-    if(p==0):
+    if(p==0 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==1 and (a[i][j]==0 or a[i][j]==1)):
+        messagebox.showinfo("Error","Already clicked")
+    elif(p==0):
         cha='X'
         a[i][j]=0
         bt9.configure(text=cha)
     else:
         cha='O'
         bt9.configure(text=cha)
+        a[i][j]=1
     k=k+1
     cwin()
 window=Tk()
